@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Рух поруч — стилі першої версії
+   Паркінс — стилі першої версії
    ========================================================================== */
 
 :root {
@@ -1741,5 +1741,333 @@ body.high-contrast .resource-card {
 
   .crisis-panel .button {
     width: 100%;
+  }
+}
+
+
+/* ==========================================================================
+   Оновлення навігації та сторінки «Про хворобу»
+   ========================================================================== */
+
+.nav-mobile-only {
+  display: none;
+}
+
+/* Тематичний покажчик без плиток */
+.disease-directory {
+  padding-top: 34px;
+  background: var(--surface);
+}
+
+.disease-group {
+  margin-bottom: 34px;
+  padding: clamp(26px, 4vw, 46px);
+  border-radius: var(--radius-lg);
+}
+
+.disease-group--sage {
+  background: #e8f1eb;
+}
+
+.disease-group--cream {
+  background: #f7f1e5;
+}
+
+.disease-group--mist {
+  background: #edf2f2;
+}
+
+.disease-group__heading {
+  display: grid;
+  grid-template-columns: minmax(240px, 0.65fr) minmax(0, 1fr);
+  gap: 34px;
+  align-items: end;
+  padding-bottom: 24px;
+  border-bottom: 1px solid rgba(25, 50, 56, 0.2);
+}
+
+.disease-group__heading .eyebrow {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-size: clamp(1.6rem, 3vw, 2.5rem);
+  line-height: 1.08;
+  letter-spacing: -0.025em;
+  text-transform: none;
+}
+
+.disease-group__heading > p:last-child {
+  max-width: 660px;
+  margin: 0;
+  color: var(--ink-soft);
+}
+
+.disease-list {
+  display: grid;
+}
+
+.disease-entry {
+  display: grid;
+  grid-template-columns: 70px minmax(0, 1fr) auto;
+  gap: 24px;
+  align-items: center;
+  padding: 25px 0;
+  border-bottom: 1px solid rgba(25, 50, 56, 0.18);
+}
+
+.disease-entry:last-child {
+  border-bottom: 0;
+}
+
+.disease-entry__number {
+  align-self: start;
+  padding-top: 3px;
+  color: var(--brand);
+  font-family: var(--font-serif);
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+.disease-entry__content h2 {
+  font-family: var(--font-sans);
+  font-size: clamp(1.15rem, 2vw, 1.45rem);
+  letter-spacing: -0.015em;
+}
+
+.disease-entry__content p {
+  max-width: 760px;
+  margin: 8px 0 0;
+  color: var(--ink-soft);
+}
+
+.disease-entry__action {
+  min-height: 48px;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 14px;
+  border: 0;
+  border-bottom: 2px solid var(--brand);
+  color: var(--brand-dark);
+  background: transparent;
+  cursor: pointer;
+  white-space: nowrap;
+  font-weight: 800;
+}
+
+.disease-entry__action:hover {
+  color: var(--white);
+  background: var(--brand);
+  border-radius: 10px 10px 0 0;
+}
+
+.disease-entry__action span {
+  font-size: 1.2rem;
+}
+
+.glossary-section {
+  background: var(--brand-deep);
+  color: var(--white);
+}
+
+.glossary-layout {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.58fr) minmax(0, 1fr);
+  gap: clamp(42px, 7vw, 90px);
+  align-items: start;
+}
+
+.glossary-intro {
+  position: sticky;
+  top: 126px;
+}
+
+.glossary-intro .eyebrow,
+.glossary-intro p {
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.glossary-list {
+  margin: 0;
+}
+
+.glossary-list > div {
+  display: grid;
+  grid-template-columns: minmax(150px, 0.42fr) minmax(0, 1fr);
+  gap: 24px;
+  padding: 22px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.glossary-list > div:first-child {
+  padding-top: 0;
+}
+
+.glossary-list dt {
+  font-weight: 800;
+}
+
+.glossary-list dd {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.understand-sources {
+  background: var(--surface);
+}
+
+.flat-source-band {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.7fr) minmax(0, 1fr);
+  gap: 44px;
+  padding: 34px 0;
+  border-top: 2px solid var(--brand);
+  border-bottom: 1px solid var(--border);
+}
+
+.flat-source-band h2 {
+  font-size: clamp(1.55rem, 3vw, 2.3rem);
+}
+
+.flat-source-band p {
+  color: var(--ink-soft);
+}
+
+.flat-source-band ul {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+  padding-left: 22px;
+}
+
+.flat-source-band a {
+  color: var(--brand-dark);
+  font-weight: 750;
+  text-underline-offset: 4px;
+}
+
+.modal__dialog--article {
+  width: min(100%, 790px);
+}
+
+.modal__article-body > p:first-child {
+  margin-top: 24px;
+}
+
+.modal__article-body h3 {
+  margin-top: 24px;
+}
+
+.modal__article-body ul {
+  display: grid;
+  gap: 8px;
+}
+
+.modal-columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.modal-columns > div {
+  padding: 20px;
+  border-radius: 14px;
+  background: var(--surface-soft);
+}
+
+.modal-columns h3 {
+  margin-top: 0;
+}
+
+.modal-facts {
+  display: grid;
+  gap: 0;
+  margin: 24px 0 0;
+}
+
+.modal-facts > div {
+  padding: 18px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.modal-facts dt {
+  color: var(--ink);
+  font-weight: 800;
+}
+
+.modal-facts dd {
+  margin: 6px 0 0;
+  color: var(--ink-soft);
+}
+
+@media (max-width: 1080px) {
+  /* На ширині, де з’являється бургер, горизонтальне меню ховається. */
+  .topics-nav {
+    display: none;
+  }
+
+  .nav-mobile-only {
+    display: flex;
+  }
+
+  .site-nav {
+    max-height: calc(100vh - 150px);
+    overflow-y: auto;
+  }
+
+  .site-nav a {
+    border-bottom: 1px solid var(--border);
+    border-radius: 0;
+  }
+
+  .site-nav a:last-child {
+    border-bottom: 0;
+  }
+
+  .site-nav a::after {
+    display: none;
+  }
+}
+
+@media (max-width: 760px) {
+  .disease-group {
+    margin-inline: -14px;
+    padding: 26px 20px;
+    border-radius: 0;
+  }
+
+  .disease-group__heading,
+  .disease-entry,
+  .glossary-layout,
+  .glossary-list > div,
+  .flat-source-band,
+  .modal-columns {
+    grid-template-columns: 1fr;
+  }
+
+  .disease-group__heading {
+    gap: 12px;
+  }
+
+  .disease-entry {
+    gap: 10px;
+    padding: 24px 0;
+  }
+
+  .disease-entry__number {
+    padding-top: 0;
+  }
+
+  .disease-entry__action {
+    justify-self: start;
+    margin-top: 8px;
+  }
+
+  .glossary-intro {
+    position: static;
+  }
+
+  .glossary-list > div {
+    gap: 6px;
   }
 }

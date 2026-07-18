@@ -31,12 +31,12 @@
   const FONT_MIN = 0.9;
   const FONT_MAX = 1.25;
   const FONT_STEP = 0.1;
-  let fontScale = Number(localStorage.getItem("ruhPoruchFontScale")) || 1;
+  let fontScale = Number(localStorage.getItem("parkinsFontScale")) || 1;
 
   const applyFontScale = () => {
     fontScale = Math.min(FONT_MAX, Math.max(FONT_MIN, fontScale));
     root.style.setProperty("--font-scale", fontScale.toFixed(2));
-    localStorage.setItem("ruhPoruchFontScale", fontScale.toFixed(2));
+    localStorage.setItem("parkinsFontScale", fontScale.toFixed(2));
   };
 
   applyFontScale();
@@ -53,7 +53,7 @@
   // Accessibility: high contrast
   // ---------------------------------------------------------------------------
   const contrastToggle = document.getElementById("contrastToggle");
-  const savedContrast = localStorage.getItem("ruhPoruchContrast") === "true";
+  const savedContrast = localStorage.getItem("parkinsContrast") === "true";
 
   body.classList.toggle("high-contrast", savedContrast);
   contrastToggle?.setAttribute("aria-pressed", String(savedContrast));
@@ -62,7 +62,7 @@
     const enabled = !body.classList.contains("high-contrast");
     body.classList.toggle("high-contrast", enabled);
     contrastToggle.setAttribute("aria-pressed", String(enabled));
-    localStorage.setItem("ruhPoruchContrast", String(enabled));
+    localStorage.setItem("parkinsContrast", String(enabled));
   });
 
   // ---------------------------------------------------------------------------
