@@ -2912,3 +2912,137 @@ body.high-contrast.inner-page .flat-source-band {
     border-radius: 12px;
   }
 }
+
+
+/* ==========================================================================
+   Уточнення карток, змісту, вправ і пов’язаних тем
+   ========================================================================== */
+
+/* 1. Головна: картка «Що вам потрібно зараз?» — біла,
+      кнопки-посилання всередині — бежеві. */
+.home-page .hero-card {
+  background: #ffffff;
+}
+
+.home-page .hero-card .action-list a {
+  color: var(--brand-deep);
+  background: var(--page-beige);
+}
+
+.home-page .hero-card .action-list a:hover {
+  background: var(--page-beige-card);
+}
+
+/* 2. Головна: картки в рубриці «Структура сайту» — білі. */
+.home-page .page-card {
+  background: #ffffff;
+}
+
+/* 3. Зміст розділу — звичайні текстові посилання без вигляду кнопок. */
+.page-toc__list {
+  column-gap: 22px;
+  row-gap: 10px;
+}
+
+.page-toc__list a {
+  min-height: 0;
+  display: inline;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  color: var(--brand-deep);
+  background: transparent;
+  text-decoration: underline;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 4px;
+  font-size: 0.92rem;
+  font-weight: 800;
+}
+
+.page-toc__list a:hover {
+  color: var(--brand);
+  background: transparent;
+  text-decoration-thickness: 2px;
+}
+
+/* 4. Сторінка «Рух»: картки вправ — білі. */
+.movement-page .exercise-card {
+  color: var(--ink);
+  background: #ffffff;
+}
+
+/* Підзаголовок вправи — просто темно-зелений текст. */
+.movement-page .exercise-card__tag {
+  margin-bottom: 22px;
+  padding: 0;
+  border-radius: 0;
+  color: var(--brand-deep);
+  background: transparent;
+  font-size: 0.82rem;
+  font-weight: 800;
+}
+
+/* 5. Попередження — чорний текст на рожевому фоні. */
+.movement-page .safety-banner {
+  border-color: rgba(142, 50, 67, 0.2);
+  color: #111111;
+  background: #f5dfe3;
+}
+
+.movement-page .safety-banner strong {
+  color: #111111;
+}
+
+/* 6. «Пов’язані теми» — прості темно-зелені текстові посилання. */
+.related-links {
+  padding: 0;
+  border-radius: 0;
+  background: transparent;
+}
+
+.related-links > div {
+  display: grid;
+  gap: 10px;
+}
+
+.related-links a {
+  min-height: 0;
+  display: inline;
+  padding: 0;
+  border-radius: 0;
+  color: var(--brand-deep);
+  background: transparent;
+  text-decoration: none;
+  font-weight: 750;
+}
+
+.related-links a:hover {
+  color: var(--brand);
+  background: transparent;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+/* Висококонтрастний режим. */
+body.high-contrast .home-page .hero-card,
+body.high-contrast .home-page .page-card,
+body.high-contrast .movement-page .exercise-card {
+  background: var(--surface);
+}
+
+body.high-contrast .movement-page .safety-banner {
+  color: var(--ink);
+  background: var(--danger-soft);
+}
+
+@media (max-width: 760px) {
+  .page-toc__list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .page-toc__list a {
+    width: auto;
+  }
+}
