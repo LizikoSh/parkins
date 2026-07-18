@@ -2071,3 +2071,87 @@ body.high-contrast .resource-card {
     gap: 6px;
   }
 }
+
+
+/* ==========================================================================
+   Сторінка «Про хворобу»: чергування фону рубрик і контрастні кнопки
+   ========================================================================== */
+
+/* Усі попередні індивідуальні відтінки рубрик скасовано. */
+.disease-group--sage,
+.disease-group--cream,
+.disease-group--mist {
+  background: transparent;
+}
+
+/* Рубрики чергуються: бежевий → білий → бежевий. */
+.disease-directory .disease-group:nth-of-type(odd) {
+  background: #f4ecde;
+}
+
+.disease-directory .disease-group:nth-of-type(even) {
+  background: #ffffff;
+  border: 1px solid var(--border);
+}
+
+/* Виразна кнопка відкриття матеріалу. */
+.disease-entry__action {
+  min-width: 176px;
+  min-height: 50px;
+  justify-content: center;
+  padding: 12px 18px;
+  border: 2px solid var(--brand-deep);
+  border-radius: 12px;
+  color: #ffffff;
+  background: var(--brand-deep);
+  box-shadow: 0 6px 16px rgba(22, 61, 59, 0.16);
+  text-decoration: none;
+  transition:
+    transform var(--transition),
+    background var(--transition),
+    border-color var(--transition),
+    box-shadow var(--transition);
+}
+
+.disease-entry__action:hover {
+  color: #ffffff;
+  background: var(--brand);
+  border-color: var(--brand);
+  border-radius: 12px;
+  box-shadow: 0 9px 22px rgba(22, 61, 59, 0.22);
+  transform: translateY(-2px);
+}
+
+.disease-entry__action:active {
+  transform: translateY(0);
+}
+
+.disease-entry__action:focus-visible {
+  outline: 4px solid rgba(216, 159, 82, 0.65);
+  outline-offset: 3px;
+}
+
+/* У висококонтрастному режимі кнопка залишається чіткою. */
+body.high-contrast .disease-entry__action {
+  border-color: #000000;
+  color: #ffffff;
+  background: #000000;
+}
+
+body.high-contrast .disease-entry__action:hover {
+  border-color: var(--brand);
+  background: var(--brand);
+}
+
+@media (max-width: 760px) {
+  .disease-directory .disease-group:nth-of-type(even) {
+    border-right: 0;
+    border-left: 0;
+  }
+
+  .disease-entry__action {
+    width: 100%;
+    min-width: 0;
+    margin-top: 12px;
+  }
+}
