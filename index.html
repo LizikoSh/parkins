@@ -1,703 +1,195 @@
 <!DOCTYPE html>
-<html lang="uk">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Рух поруч — зрозуміла інформація та щоденна підтримка для людей, які живуть із хворобою Паркінсона, та їхніх близьких.">
-  <meta name="theme-color" content="#2f6662">
-  <title>Рух поруч — підтримка для життя з Паркінсоном</title>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  <script defer src="https://cdn.vercel-insights.com/v1/script.js"></script>
-</head>
-
-<body>
-  <a class="skip-link" href="#main-content">Перейти до основного вмісту</a>
-
-  <div class="utility-bar" aria-label="Налаштування доступності">
-    <div class="container utility-bar__inner">
-      <p>Зрозуміла інформація. Спокійний темп. Підтримка поруч.</p>
-
-      <div class="accessibility-controls">
-        <button class="utility-button" type="button" data-font-action="decrease" aria-label="Зменшити розмір тексту">
+<html lang="uk"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="Рух поруч — зрозуміла інформація та щоденна підтримка для людей, які живуть із хворобою Паркінсона, та їхніх близьких." name="description"/><meta content="#2f6662" name="theme-color"/><title>Рух поруч — підтримка для життя з Паркінсоном</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&amp;display=swap" rel="stylesheet"/><link href="styles.css" rel="stylesheet"/></head><body><div aria-label="Налаштування доступності" class="utility-bar">
+<div class="container utility-bar__inner">
+<p>Зрозуміла інформація. Спокійний темп. Підтримка поруч.</p>
+<div class="accessibility-controls">
+<button aria-label="Зменшити розмір тексту" class="utility-button" data-font-action="decrease" type="button">
           A−
         </button>
-        <button class="utility-button" type="button" data-font-action="increase" aria-label="Збільшити розмір тексту">
+<button aria-label="Збільшити розмір тексту" class="utility-button" data-font-action="increase" type="button">
           A+
         </button>
-        <button class="utility-button utility-button--text" type="button" id="contrastToggle" aria-pressed="false">
+<button aria-pressed="false" class="utility-button utility-button--text" id="contrastToggle" type="button">
           Високий контраст
         </button>
-      </div>
-    </div>
-  </div>
-
-  <header class="site-header" id="top">
-    <div class="container site-header__inner">
-      <a class="brand" href="#top" aria-label="Рух поруч, головна сторінка">
-        <span class="brand__mark" aria-hidden="true">
-          <svg viewBox="0 0 48 48" role="img">
-            <path d="M24 7c7 0 12.5 5.5 12.5 12.3 0 9.8-12.5 21.1-12.5 21.1S11.5 29.1 11.5 19.3C11.5 12.5 17 7 24 7Z"></path>
-            <path d="M17 24.5c3.6-1 5.8-3.4 7-7.4 1.5 4.8 4.2 7.2 8.2 7.4"></path>
-          </svg>
-        </span>
-        <span>
-          <strong>Рух поруч</strong>
-          <small>підтримка для життя з Паркінсоном</small>
-        </span>
-      </a>
-
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="siteNavigation">
-        <span class="menu-toggle__label">Меню</span>
-        <span class="menu-toggle__icon" aria-hidden="true"></span>
-      </button>
-
-      <nav class="site-nav" id="siteNavigation" aria-label="Основна навігація">
-        <a href="#understand">Зрозуміти Паркінсон</a>
-        <a href="#daily-life">Жити щодня</a>
-        <a href="#movement">Рух і вправи</a>
-        <a href="#support-ukraine">Допомога в Україні</a>
-        <a href="#relatives">Для близьких</a>
-      </nav>
-    </div>
-  </header>
-
-  <main id="main-content">
-    <section class="hero">
-      <div class="hero__decor hero__decor--one" aria-hidden="true"></div>
-      <div class="hero__decor hero__decor--two" aria-hidden="true"></div>
-
-      <div class="container hero__grid">
-        <div class="hero__content">
-          <p class="eyebrow">Інформаційний простір підтримки</p>
-          <h1>Жити з Паркінсоном легше, коли підтримка поруч</h1>
-          <p class="hero__lead">
+</div>
+</div>
+</div><header class="site-header" id="top">
+<div class="container site-header__inner">
+<a aria-label="Рух поруч, головна сторінка" class="brand" href="index.html">
+<span aria-hidden="true" class="brand__mark">
+<svg role="img" viewbox="0 0 48 48">
+<path d="M24 7c7 0 12.5 5.5 12.5 12.3 0 9.8-12.5 21.1-12.5 21.1S11.5 29.1 11.5 19.3C11.5 12.5 17 7 24 7Z"></path>
+<path d="M17 24.5c3.6-1 5.8-3.4 7-7.4 1.5 4.8 4.2 7.2 8.2 7.4"></path>
+</svg>
+</span>
+<span>
+<strong>Рух поруч</strong>
+<small>підтримка для життя з Паркінсоном</small>
+</span>
+</a>
+<button aria-controls="siteNavigation" aria-expanded="false" class="menu-toggle" type="button">
+<span class="menu-toggle__label">Меню</span>
+<span aria-hidden="true" class="menu-toggle__icon"></span>
+</button>
+<nav aria-label="Основна навігація" class="site-nav" id="siteNavigation">
+<a href="understand.html">Зрозуміти Паркінсон</a>
+<a href="daily-life.html">Жити щодня</a>
+<a href="movement.html">Рух і вправи</a>
+<a href="support-ukraine.html">Допомога в Україні</a>
+<a href="relatives.html">Для близьких</a>
+</nav>
+</div>
+</header><main id="main-content"><section class="hero">
+<div aria-hidden="true" class="hero__decor hero__decor--one"></div>
+<div aria-hidden="true" class="hero__decor hero__decor--two"></div>
+<div class="container hero__grid">
+<div class="hero__content">
+<p class="eyebrow">Інформаційний простір підтримки</p>
+<h1>Жити з Паркінсоном легше, коли підтримка поруч</h1>
+<p class="hero__lead">
             Зрозумілі матеріали про хворобу, повсякденне життя, рух, догляд
             і доступну допомогу — без залякування та складних формулювань.
           </p>
-
-          <div class="hero__actions">
-            <a class="button button--primary" href="#first-steps">Мені щойно встановили діагноз</a>
-            <a class="button button--secondary" href="#quick-search">Знайти потрібну інформацію</a>
-          </div>
-
-          <p class="medical-note">
+<div class="hero__actions">
+<a class="button button--primary" href="first-steps.html">Мені щойно встановили діагноз</a>
+<a class="button button--secondary" href="index.html#quick-search">Знайти потрібну інформацію</a>
+</div>
+<p class="medical-note">
             Матеріали сайту мають інформаційний характер і не замінюють консультацію лікаря.
           </p>
-        </div>
-
-        <div class="hero-card" aria-label="Швидкі дії">
-          <div class="hero-card__icon" aria-hidden="true">
-            <svg viewBox="0 0 72 72">
-              <circle cx="36" cy="36" r="31"></circle>
-              <path d="M21 39c5-2 8-6 10-12 2 8 7 12 15 12"></path>
-              <path d="M36 17v38"></path>
-            </svg>
-          </div>
-          <h2>Що вам потрібно зараз?</h2>
-          <ul class="action-list">
-            <li><a href="#understand">Зрозуміти симптом</a></li>
-            <li><a href="#doctor-visit">Підготуватися до лікаря</a></li>
-            <li><a href="#movement">Знайти безпечну вправу</a></li>
-            <li><a href="#support-ukraine">Знайти допомогу в Україні</a></li>
-            <li><a href="#relatives">Допомогти близькій людині</a></li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section--compact" id="quick-search">
-      <div class="container">
-        <div class="search-panel">
-          <div>
-            <p class="eyebrow">Швидкий пошук</p>
-            <h2>Знайдіть матеріал за темою</h2>
-            <p>Наприклад: сон, тремор, падіння, харчування, ліки або підтримка близьких.</p>
-          </div>
-
-          <form class="site-search" role="search" id="siteSearch">
-            <label class="visually-hidden" for="searchInput">Пошук матеріалів</label>
-            <div class="site-search__field">
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <circle cx="11" cy="11" r="7"></circle>
-                <path d="m20 20-4-4"></path>
-              </svg>
-              <input id="searchInput" type="search" placeholder="Введіть тему..." autocomplete="off">
-              <button type="button" id="searchClear" aria-label="Очистити пошук">×</button>
-            </div>
-          </form>
-        </div>
-
-        <p class="search-status" id="searchStatus" aria-live="polite"></p>
-      </div>
-    </section>
-
-    <section class="section" id="first-steps">
-      <div class="container">
-        <div class="section-heading">
-          <div>
-            <p class="eyebrow">Перші кроки</p>
-            <h2>Якщо діагноз встановили нещодавно</h2>
-          </div>
-          <p>
-            Не потрібно розібратися в усьому одразу. Почніть із кількох
-            зрозумілих кроків і повертайтеся до матеріалів у власному темпі.
-          </p>
-        </div>
-
-        <div class="steps-grid">
-          <article class="step-card searchable" data-search="діагноз перші кроки зрозуміти">
-            <span class="step-card__number">01</span>
-            <h3>Зрозумійте основне</h3>
-            <p>Що означає діагноз, які симптоми можуть виникати та чому перебіг у кожної людини різний.</p>
-            <a href="#understand">Перейти до пояснень</a>
-          </article>
-
-          <article class="step-card searchable" data-search="лікар невролог підготовка консультація">
-            <span class="step-card__number">02</span>
-            <h3>Підготуйте запитання лікарю</h3>
-            <p>Запишіть зміни у самопочутті, перелік препаратів і те, що найбільше турбує зараз.</p>
-            <a href="#doctor-visit">Відкрити пам’ятку</a>
-          </article>
-
-          <article class="step-card searchable" data-search="рух вправи активність">
-            <span class="step-card__number">03</span>
-            <h3>Підтримуйте рух</h3>
-            <p>Оберіть посильну активність і узгодьте безпечне навантаження з фахівцем.</p>
-            <a href="#movement">Переглянути вправи</a>
-          </article>
-
-          <article class="step-card searchable" data-search="родина близькі підтримка розмова">
-            <span class="step-card__number">04</span>
-            <h3>Не залишайтеся наодинці</h3>
-            <p>Поясніть близьким, якої допомоги потребуєте, і де важливо зберегти самостійність.</p>
-            <a href="#relatives">Матеріали для близьких</a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section--tinted" id="understand">
-      <div class="container">
-        <div class="section-heading">
-          <div>
-            <p class="eyebrow">Бібліотека</p>
-            <h2>Зрозуміти хворобу Паркінсона</h2>
-          </div>
-          <p>
-            Матеріали згруповані за життєвими ситуаціями, а не лише за
-            медичними термінами.
-          </p>
-        </div>
-
-        <div class="topic-grid">
-          <article class="topic-card searchable" data-search="паркінсон що це діагноз перебіг стадії">
-            <div class="topic-card__icon" aria-hidden="true">01</div>
-            <h3>Що таке хвороба Паркінсона</h3>
-            <p>Коротке пояснення без складної термінології: що змінюється, як встановлюють діагноз і чому симптоми можуть відрізнятися.</p>
-            <button class="text-button modal-trigger" type="button" data-modal="modal-parkinson">Читати матеріал</button>
-          </article>
-
-          <article class="topic-card searchable" data-search="ходьба завмирання рівновага падіння рух">
-            <div class="topic-card__icon" aria-hidden="true">02</div>
-            <h3>Стало важче ходити</h3>
-            <p>Що варто зафіксувати, як зробити дім безпечнішим і з ким обговорити зміни ходи або рівноваги.</p>
-            <button class="text-button modal-trigger" type="button" data-modal="modal-walking">Читати матеріал</button>
-          </article>
-
-          <article class="topic-card searchable" data-search="сон безсоння втома денна сонливість">
-            <div class="topic-card__icon" aria-hidden="true">03</div>
-            <h3>Погіршився сон</h3>
-            <p>Як вести простий щоденник сну та які спостереження можуть бути корисними під час консультації.</p>
-            <button class="text-button modal-trigger" type="button" data-modal="modal-sleep">Читати матеріал</button>
-          </article>
-
-          <article class="topic-card searchable" data-search="мовлення голос тихо говорити ковтання">
-            <div class="topic-card__icon" aria-hidden="true">04</div>
-            <h3>Змінилися голос або ковтання</h3>
-            <p>На які ознаки звернути увагу та коли варто звернутися до фахівця з мовлення й ковтання.</p>
-            <button class="text-button modal-trigger" type="button" data-modal="modal-speech">Читати матеріал</button>
-          </article>
-
-          <article class="topic-card searchable" data-search="настрій тривога апатія депресія мотивація">
-            <div class="topic-card__icon" aria-hidden="true">05</div>
-            <h3>Змінився настрій</h3>
-            <p>Як розрізняти втому, тривогу й апатію та чому про емоційні зміни важливо говорити так само, як про рухові.</p>
-            <button class="text-button modal-trigger" type="button" data-modal="modal-mood">Читати матеріал</button>
-          </article>
-
-          <article class="topic-card searchable" data-search="ліки ефект побічні періоди увімкнення вимкнення">
-            <div class="topic-card__icon" aria-hidden="true">06</div>
-            <h3>Ліки діють нерівномірно</h3>
-            <p>Що записати про час приймання, дію препарату та небажані відчуття, не змінюючи лікування самостійно.</p>
-            <button class="text-button modal-trigger" type="button" data-modal="modal-medication">Читати матеріал</button>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="daily-life">
-      <div class="container">
-        <div class="section-heading">
-          <div>
-            <p class="eyebrow">Повсякденне життя</p>
-            <h2>Практичні рішення для щоденних справ</h2>
-          </div>
-          <p>
-            Невеликі зміни в середовищі та звичках можуть зробити день
-            передбачуванішим і безпечнішим.
-          </p>
-        </div>
-
-        <div class="accordion-list">
-          <article class="accordion searchable" data-search="дім безпека ванна килим падіння освітлення">
-            <h3>
-              <button class="accordion__button" type="button" aria-expanded="false">
-                <span>Безпечний дім</span>
-                <span class="accordion__icon" aria-hidden="true"></span>
-              </button>
-            </h3>
-            <div class="accordion__panel" hidden>
-              <div class="accordion__content">
-                <p>Перевірте проходи, освітлення, неслизькі поверхні та доступність речей, якими користуєтеся щодня.</p>
-                <ul>
-                  <li>Приберіть дроти й нестійкі килимки з проходів.</li>
-                  <li>Забезпечте хороше освітлення в коридорах і біля ліжка.</li>
-                  <li>Розмістіть часто потрібні речі на зручній висоті.</li>
-                  <li>Порадьтеся з ерготерапевтом щодо поручнів або допоміжних пристроїв.</li>
-                </ul>
-              </div>
-            </div>
-          </article>
-
-          <article class="accordion searchable" data-search="одягання ґудзики застібки руки моторика">
-            <h3>
-              <button class="accordion__button" type="button" aria-expanded="false">
-                <span>Одягання та дрібні рухи</span>
-                <span class="accordion__icon" aria-hidden="true"></span>
-              </button>
-            </h3>
-            <div class="accordion__panel" hidden>
-              <div class="accordion__content">
-                <p>Дайте собі більше часу, сідайте під час одягання та обирайте одяг зі зручними застібками.</p>
-                <ul>
-                  <li>Готуйте одяг у потрібній послідовності.</li>
-                  <li>Використовуйте стабільний стілець із підлокітниками.</li>
-                  <li>Розгляньте магнітні застібки або більші повзунки блискавок.</li>
-                </ul>
-              </div>
-            </div>
-          </article>
-
-          <article class="accordion searchable" data-search="харчування вода закреп апетит ковтання">
-            <h3>
-              <button class="accordion__button" type="button" aria-expanded="false">
-                <span>Харчування та вода</span>
-                <span class="accordion__icon" aria-hidden="true"></span>
-              </button>
-            </h3>
-            <div class="accordion__panel" hidden>
-              <div class="accordion__content">
-                <p>Регулярність харчування, достатня кількість рідини та комфортна консистенція їжі можуть підтримувати самопочуття.</p>
-                <ul>
-                  <li>Не змінюйте час приймання ліків або харчування без узгодження з лікарем.</li>
-                  <li>Якщо їжа чи вода викликають кашель, повідомте про це фахівця.</li>
-                  <li>За тривалого зниження апетиту або ваги зверніться по консультацію.</li>
-                </ul>
-              </div>
-            </div>
-          </article>
-
-          <article class="accordion searchable" data-search="робота подорожі соціальне життя планування">
-            <h3>
-              <button class="accordion__button" type="button" aria-expanded="false">
-                <span>Робота, справи та подорожі</span>
-                <span class="accordion__icon" aria-hidden="true"></span>
-              </button>
-            </h3>
-            <div class="accordion__panel" hidden>
-              <div class="accordion__content">
-                <p>Плануйте складні справи на час, коли зазвичай почуваєтеся краще, і залишайте запас часу на дорогу та відпочинок.</p>
-                <ul>
-                  <li>Зберігайте список препаратів і контакт близької людини.</li>
-                  <li>Під час подорожі майте запас призначених препаратів у ручній поклажі.</li>
-                  <li>Робіть перерви до появи вираженої втоми.</li>
-                </ul>
-              </div>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section--deep" id="movement">
-      <div class="container">
-        <div class="section-heading section-heading--light">
-          <div>
-            <p class="eyebrow">Рух і вправи</p>
-            <h2>Оберіть посильну активність</h2>
-          </div>
-          <p>
-            Перед початком нового комплексу варто обговорити безпечне
-            навантаження з лікарем або фізичним терапевтом.
-          </p>
-        </div>
-
-        <div class="exercise-filters" role="group" aria-label="Фільтр вправ">
-          <button class="filter-button is-active" type="button" data-filter="all">Усі</button>
-          <button class="filter-button" type="button" data-filter="seated">Сидячи</button>
-          <button class="filter-button" type="button" data-filter="support">З опорою</button>
-          <button class="filter-button" type="button" data-filter="breathing">Дихання і голос</button>
-        </div>
-
-        <div class="exercise-grid">
-          <article class="exercise-card searchable" data-category="seated" data-search="сидячи руки плечі розминка 5 хвилин">
-            <span class="exercise-card__tag">5 хвилин · сидячи</span>
-            <h3>М’яка розминка для плечей і рук</h3>
-            <p>Повільні рухи в комфортному діапазоні, які можна виконувати на стійкому стільці.</p>
-            <button class="button button--light modal-trigger" type="button" data-modal="modal-exercise-seated">Відкрити комплекс</button>
-          </article>
-
-          <article class="exercise-card searchable" data-category="support" data-search="опора постава вага рівновага 7 хвилин">
-            <span class="exercise-card__tag">7 хвилин · з опорою</span>
-            <h3>Перенесення ваги біля опори</h3>
-            <p>Вправа для контролю положення тіла. Виконується лише біля надійної опори.</p>
-            <button class="button button--light modal-trigger" type="button" data-modal="modal-exercise-support">Відкрити комплекс</button>
-          </article>
-
-          <article class="exercise-card searchable" data-category="breathing" data-search="дихання голос мовлення 5 хвилин">
-            <span class="exercise-card__tag">5 хвилин · дихання</span>
-            <h3>Спокійне дихання і голос</h3>
-            <p>Коротка практика для усвідомленого дихання та м’якого голосового розігріву.</p>
-            <button class="button button--light modal-trigger" type="button" data-modal="modal-exercise-breathing">Відкрити комплекс</button>
-          </article>
-        </div>
-
-        <div class="safety-banner">
-          <strong>Зупиніться і зверніться по допомогу,</strong>
-          якщо під час вправи з’явилися біль у грудях, виражена задишка,
-          запаморочення, раптова слабкість або відчуття, що можете впасти.
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="doctor-visit">
-      <div class="container">
-        <div class="doctor-card">
-          <div class="doctor-card__content">
-            <p class="eyebrow">Підготовка до консультації</p>
-            <h2>Що взяти із собою до лікаря</h2>
-            <p>
-              Короткі нотатки допомагають не забути важливе й точніше
-              описати зміни, які відбулися між консультаціями.
-            </p>
-
-            <div class="checklist">
-              <label><input type="checkbox"> Перелік усіх препаратів і добавок</label>
-              <label><input type="checkbox"> Час приймання та помітні зміни самопочуття</label>
-              <label><input type="checkbox"> Інформація про падіння або запаморочення</label>
-              <label><input type="checkbox"> Зміни сну, настрою, мовлення чи ковтання</label>
-              <label><input type="checkbox"> Три найважливіші запитання</label>
-            </div>
-          </div>
-
-          <aside class="doctor-card__aside">
-            <h3>Важливо</h3>
-            <p>
-              Не припиняйте приймання призначених препаратів і не змінюйте
-              дозування самостійно. Зафіксуйте проблему та обговоріть її з лікарем.
-            </p>
-            <button class="button button--primary" type="button" id="printChecklist">Роздрукувати пам’ятку</button>
-          </aside>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section--tinted" id="relatives">
-      <div class="container">
-        <div class="section-heading">
-          <div>
-            <p class="eyebrow">Для близьких</p>
-            <h2>Допомагати, не забираючи самостійність</h2>
-          </div>
-          <p>
-            Підтримка працює краще, коли людина може прямо сказати,
-            що їй потрібно, а що вона хоче робити самостійно.
-          </p>
-        </div>
-
-        <div class="support-grid">
-          <article class="support-card searchable" data-search="близькі спілкування терпіння мовлення">
-            <h3>Дайте час відповісти</h3>
-            <p>Не завершуйте фразу замість людини без запиту. Зменште фоновий шум і підтримуйте зоровий контакт.</p>
-          </article>
-
-          <article class="support-card searchable" data-search="допомога самостійність контроль">
-            <h3>Запитуйте, а не вирішуйте</h3>
-            <p>Фраза «Що тобі зараз допоможе?» зазвичай корисніша, ніж автоматичне втручання в кожну дію.</p>
-          </article>
-
-          <article class="support-card searchable" data-search="доглядальник втома відпочинок виснаження">
-            <h3>Зважайте на власні сили</h3>
-            <p>Регулярний відпочинок і розподіл обов’язків — це частина якісного догляду, а не прояв байдужості.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="support-ukraine">
-      <div class="container">
-        <div class="section-heading">
-          <div>
-            <p class="eyebrow">Допомога в Україні</p>
-            <h2>Куди звертатися</h2>
-          </div>
-          <p>
-            Перед публікацією реального проєкту контакти й умови програм
-            потрібно перевірити та регулярно оновлювати.
-          </p>
-        </div>
-
-        <div class="resource-grid">
-          <article class="resource-card searchable" data-search="сімейний лікар невролог направлення консультація">
-            <span class="resource-card__label">Медична допомога</span>
-            <h3>Сімейний лікар і невролог</h3>
-            <p>Пояснення маршруту: з чого почати, коли потрібне направлення та які документи підготувати.</p>
-            <a href="#" aria-disabled="true" class="disabled-link">Матеріал готується</a>
-          </article>
-
-          <article class="resource-card searchable" data-search="доступні ліки рецепт аптека препарати">
-            <span class="resource-card__label">Ліки</span>
-            <h3>Програма «Доступні ліки»</h3>
-            <p>Покрокова інструкція щодо електронного рецепта, пошуку аптеки та отримання препаратів.</p>
-            <a href="#" aria-disabled="true" class="disabled-link">Матеріал готується</a>
-          </article>
-
-          <article class="resource-card searchable" data-search="реабілітація фізичний терапевт логопед ерготерапевт">
-            <span class="resource-card__label">Реабілітація</span>
-            <h3>Пошук фахівців</h3>
-            <p>Що робить фізичний терапевт, ерготерапевт і фахівець із мовлення та ковтання.</p>
-            <a href="#" aria-disabled="true" class="disabled-link">Матеріал готується</a>
-          </article>
-
-          <article class="resource-card searchable" data-search="соціальна допомога права документи підтримка">
-            <span class="resource-card__label">Соціальна підтримка</span>
-            <h3>Послуги та права</h3>
-            <p>Навігація щодо соціальних послуг, допоміжних засобів і трудових питань.</p>
-            <a href="#" aria-disabled="true" class="disabled-link">Матеріал готується</a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section--compact">
-      <div class="container">
-        <div class="editorial-banner">
-          <div>
-            <p class="eyebrow">Довіра до інформації</p>
-            <h2>Як мають перевірятися матеріали</h2>
-          </div>
-          <ul>
-            <li>Медичний автор або профільний рецензент.</li>
-            <li>Дата останнього перегляду.</li>
-            <li>Посилання на надійні джерела.</li>
-            <li>Чітке розмежування медичної інформації та особистого досвіду.</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section--emergency">
-      <div class="container emergency-panel">
-        <div>
-          <p class="eyebrow">Невідкладна ситуація</p>
-          <h2>Цей сайт не призначений для термінової допомоги</h2>
-          <p>
+</div>
+<div aria-label="Швидкі дії" class="hero-card">
+<div aria-hidden="true" class="hero-card__icon">
+<svg viewbox="0 0 72 72">
+<circle cx="36" cy="36" r="31"></circle>
+<path d="M21 39c5-2 8-6 10-12 2 8 7 12 15 12"></path>
+<path d="M36 17v38"></path>
+</svg>
+</div>
+<h2>Що вам потрібно зараз?</h2>
+<ul class="action-list">
+<li><a href="understand.html">Зрозуміти симптом</a></li>
+<li><a href="doctor-visit.html">Підготуватися до лікаря</a></li>
+<li><a href="movement.html">Знайти безпечну вправу</a></li>
+<li><a href="support-ukraine.html">Знайти допомогу в Україні</a></li>
+<li><a href="relatives.html">Допомогти близькій людині</a></li>
+</ul>
+</div>
+</div>
+</section><section class="section section--compact" id="quick-search">
+<div class="container">
+<div class="search-panel">
+<div>
+<p class="eyebrow">Швидкий пошук</p>
+<h2>Знайдіть потрібний розділ</h2>
+<p>Наприклад: сон, тремор, падіння, харчування, ліки або підтримка близьких.</p>
+</div>
+<form class="site-search" id="siteSearch" role="search">
+<label class="visually-hidden" for="searchInput">Пошук матеріалів</label>
+<div class="site-search__field">
+<svg aria-hidden="true" viewbox="0 0 24 24">
+<circle cx="11" cy="11" r="7"></circle>
+<path d="m20 20-4-4"></path>
+</svg>
+<input autocomplete="off" id="searchInput" placeholder="Введіть тему..." type="search"/>
+<button aria-label="Очистити пошук" id="searchClear" type="button">×</button>
+</div>
+</form>
+</div>
+<p aria-live="polite" class="search-status" id="searchStatus"></p>
+</div>
+</section><section class="section" id="site-sections">
+<div class="container">
+<div class="section-heading">
+<div>
+<p class="eyebrow">Структура сайту</p>
+<h2>Окремі сторінки для кожної потреби</h2>
+</div>
+<p>Головна сторінка допомагає обрати напрямок, а докладні матеріали відкриваються на окремих сторінках.</p>
+</div>
+<div class="page-cards">
+<article class="page-card searchable" data-search="діагноз перші кроки початок">
+<span class="page-card__number">01</span><h3>Перші кроки після діагнозу</h3>
+<p>Послідовний маршрут без інформаційного перевантаження.</p>
+<a href="first-steps.html">Відкрити сторінку</a>
+</article>
+<article class="page-card searchable" data-search="паркінсон симптоми діагностика лікування">
+<span class="page-card__number">02</span><h3>Зрозуміти Паркінсон</h3>
+<p>Основне про симптоми, діагностику, лікування та спостереження.</p>
+<a href="understand.html">Відкрити сторінку</a>
+</article>
+<article class="page-card searchable" data-search="побут сон харчування безпека робота">
+<span class="page-card__number">03</span><h3>Жити щодня</h3>
+<p>Рішення для дому, сну, харчування та щоденних справ.</p>
+<a href="daily-life.html">Відкрити сторінку</a>
+</article>
+<article class="page-card searchable" data-search="рух вправи фізична активність рівновага">
+<span class="page-card__number">04</span><h3>Рух і вправи</h3>
+<p>Демонстраційні комплекси й основні правила безпеки.</p>
+<a href="movement.html">Відкрити сторінку</a>
+</article>
+<article class="page-card searchable" data-search="лікар прийом консультація нотатки">
+<span class="page-card__number">05</span><h3>Підготовка до лікаря</h3>
+<p>Чекліст і запитання для консультації.</p>
+<a href="doctor-visit.html">Відкрити сторінку</a>
+</article>
+<article class="page-card searchable" data-search="родина доглядальник близькі підтримка">
+<span class="page-card__number">06</span><h3>Для близьких</h3>
+<p>Як допомагати, зберігати самостійність і не виснажуватися.</p>
+<a href="relatives.html">Відкрити сторінку</a>
+</article>
+<article class="page-card searchable" data-search="україна лікар ліки реабілітація соціальна допомога">
+<span class="page-card__number">07</span><h3>Допомога в Україні</h3>
+<p>Структура медичної, реабілітаційної та соціальної підтримки.</p>
+<a href="support-ukraine.html">Відкрити сторінку</a>
+</article>
+</div>
+</div>
+</section></main><section class="section section--emergency">
+<div class="container emergency-panel">
+<div>
+<p class="eyebrow">Невідкладна ситуація</p>
+<h2>Цей сайт не призначений для термінової допомоги</h2>
+<p>
             За раптового значного погіршення стану, втрати свідомості,
             болю у грудях, ознак інсульту або іншої небезпечної ситуації
             зверніться до екстреної медичної допомоги.
           </p>
-        </div>
-        <a class="button button--danger" href="tel:103">Зателефонувати 103</a>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container site-footer__grid">
-      <div>
-        <a class="brand brand--footer" href="#top">
-          <span class="brand__mark" aria-hidden="true">
-            <svg viewBox="0 0 48 48">
-              <path d="M24 7c7 0 12.5 5.5 12.5 12.3 0 9.8-12.5 21.1-12.5 21.1S11.5 29.1 11.5 19.3C11.5 12.5 17 7 24 7Z"></path>
-              <path d="M17 24.5c3.6-1 5.8-3.4 7-7.4 1.5 4.8 4.2 7.2 8.2 7.4"></path>
-            </svg>
-          </span>
-          <span>
-            <strong>Рух поруч</strong>
-            <small>підтримка для життя з Паркінсоном</small>
-          </span>
-        </a>
-        <p class="site-footer__note">
+</div>
+<a class="button button--danger" href="tel:103">Зателефонувати 103</a>
+</div>
+</section><footer class="site-footer">
+<div class="container site-footer__grid">
+<div>
+<a class="brand brand--footer" href="index.html">
+<span aria-hidden="true" class="brand__mark">
+<svg viewbox="0 0 48 48">
+<path d="M24 7c7 0 12.5 5.5 12.5 12.3 0 9.8-12.5 21.1-12.5 21.1S11.5 29.1 11.5 19.3C11.5 12.5 17 7 24 7Z"></path>
+<path d="M17 24.5c3.6-1 5.8-3.4 7-7.4 1.5 4.8 4.2 7.2 8.2 7.4"></path>
+</svg>
+</span>
+<span>
+<strong>Рух поруч</strong>
+<small>підтримка для життя з Паркінсоном</small>
+</span>
+</a>
+<p class="site-footer__note">
           Демонстраційна перша версія інформаційного сайту. Перед реальною
           публікацією весь медичний контент має пройти професійну перевірку.
         </p>
-      </div>
-
-      <nav class="footer-nav" aria-label="Навігація в підвалі">
-        <a href="#understand">Про хворобу</a>
-        <a href="#daily-life">Повсякденне життя</a>
-        <a href="#movement">Вправи</a>
-        <a href="#relatives">Для близьких</a>
-      </nav>
-
-      <div class="footer-meta">
-        <a href="#">Політика конфіденційності</a>
-        <a href="#">Редакційні стандарти</a>
-        <a href="#">Зворотний зв’язок</a>
-        <p>© <span id="currentYear"></span> «Рух поруч»</p>
-      </div>
-    </div>
-  </footer>
-
-  <div class="modal" id="modal-parkinson" role="dialog" aria-modal="true" aria-labelledby="modal-parkinson-title" hidden>
-    <div class="modal__backdrop" data-modal-close></div>
-    <div class="modal__dialog" role="document">
-      <button class="modal__close" type="button" aria-label="Закрити" data-modal-close>×</button>
-      <p class="eyebrow">Медична інформація</p>
-      <h2 id="modal-parkinson-title">Що таке хвороба Паркінсона</h2>
-      <p>Хвороба Паркінсона — це неврологічне захворювання, яке може впливати на рухи, рівновагу, сон, настрій, мовлення та інші функції.</p>
-      <p>Симптоми й темп змін відрізняються в різних людей. План допомоги складають індивідуально разом із лікарем та іншими фахівцями.</p>
-      <div class="info-box"><strong>Перед публікацією:</strong> цей текст має бути доповнений і перевірений неврологом.</div>
-    </div>
-  </div>
-
-  <div class="modal" id="modal-walking" role="dialog" aria-modal="true" aria-labelledby="modal-walking-title" hidden>
-    <div class="modal__backdrop" data-modal-close></div>
-    <div class="modal__dialog" role="document">
-      <button class="modal__close" type="button" aria-label="Закрити" data-modal-close>×</button>
-      <p class="eyebrow">Практична порада</p>
-      <h2 id="modal-walking-title">Як підготувати опис змін ходи</h2>
-      <ul>
-        <li>Коли саме стало важче починати рух або повертати?</li>
-        <li>Чи виникають завмирання у вузьких проходах або біля дверей?</li>
-        <li>Чи були падіння або майже падіння?</li>
-        <li>У який час дня ходити легше або складніше?</li>
-      </ul>
-      <p>Не намагайтеся самостійно підбирати складні тренування. Обговоріть зміни з лікарем або фізичним терапевтом.</p>
-    </div>
-  </div>
-
-  <div class="modal" id="modal-sleep" role="dialog" aria-modal="true" aria-labelledby="modal-sleep-title" hidden>
-    <div class="modal__backdrop" data-modal-close></div>
-    <div class="modal__dialog" role="document">
-      <button class="modal__close" type="button" aria-label="Закрити" data-modal-close>×</button>
-      <p class="eyebrow">Щоденник спостережень</p>
-      <h2 id="modal-sleep-title">Що записувати про сон</h2>
-      <ul>
-        <li>Час засинання і пробудження.</li>
-        <li>Кількість нічних пробуджень.</li>
-        <li>Денну сонливість.</li>
-        <li>Незвичну поведінку уві сні, про яку повідомили близькі.</li>
-      </ul>
-      <p>Якщо порушення сну повторюються, обговоріть їх із лікарем. Не починайте снодійні препарати без консультації.</p>
-    </div>
-  </div>
-
-  <div class="modal" id="modal-speech" role="dialog" aria-modal="true" aria-labelledby="modal-speech-title" hidden>
-    <div class="modal__backdrop" data-modal-close></div>
-    <div class="modal__dialog" role="document">
-      <button class="modal__close" type="button" aria-label="Закрити" data-modal-close>×</button>
-      <p class="eyebrow">Мовлення і ковтання</p>
-      <h2 id="modal-speech-title">Коли варто звернути увагу</h2>
-      <ul>
-        <li>Голос став значно тихішим або монотонним.</li>
-        <li>Співрозмовники часто просять повторити сказане.</li>
-        <li>Під час їжі чи пиття виникає кашель.</li>
-        <li>Їжа довго залишається в роті або прийом їжі став значно довшим.</li>
-      </ul>
-      <p>Такі зміни варто обговорити з лікарем і фахівцем, який працює з мовленням та ковтанням.</p>
-    </div>
-  </div>
-
-  <div class="modal" id="modal-mood" role="dialog" aria-modal="true" aria-labelledby="modal-mood-title" hidden>
-    <div class="modal__backdrop" data-modal-close></div>
-    <div class="modal__dialog" role="document">
-      <button class="modal__close" type="button" aria-label="Закрити" data-modal-close>×</button>
-      <p class="eyebrow">Емоційна підтримка</p>
-      <h2 id="modal-mood-title">Емоційні зміни теж важливі</h2>
-      <p>Тривога, апатія, пригнічений настрій або втрата інтересу до звичних справ не мають залишатися без уваги.</p>
-      <p>Запишіть, коли це почалося, як довго триває і як впливає на сон, апетит та повсякденні справи. Обговоріть ці зміни з лікарем.</p>
-    </div>
-  </div>
-
-  <div class="modal" id="modal-medication" role="dialog" aria-modal="true" aria-labelledby="modal-medication-title" hidden>
-    <div class="modal__backdrop" data-modal-close></div>
-    <div class="modal__dialog" role="document">
-      <button class="modal__close" type="button" aria-label="Закрити" data-modal-close>×</button>
-      <p class="eyebrow">Лікування</p>
-      <h2 id="modal-medication-title">Що записати про дію ліків</h2>
-      <ul>
-        <li>Назву та час приймання призначеного препарату.</li>
-        <li>Коли ви відчули зміну самопочуття.</li>
-        <li>Які симптоми полегшилися або посилилися.</li>
-        <li>Чи з’явилися нові небажані відчуття.</li>
-      </ul>
-      <div class="info-box"><strong>Не змінюйте дозу або графік самостійно.</strong> Ці нотатки призначені для обговорення з лікарем.</div>
-    </div>
-  </div>
-
-  <div class="modal" id="modal-exercise-seated" role="dialog" aria-modal="true" aria-labelledby="modal-exercise-seated-title" hidden>
-    <div class="modal__backdrop" data-modal-close></div>
-    <div class="modal__dialog" role="document">
-      <button class="modal__close" type="button" aria-label="Закрити" data-modal-close>×</button>
-      <p class="eyebrow">Демонстраційний комплекс</p>
-      <h2 id="modal-exercise-seated-title">М’яка розминка для плечей і рук</h2>
-      <ol>
-        <li>Сядьте на стійкий стілець, поставте стопи на підлогу.</li>
-        <li>Повільно підніміть і опустіть плечі 5 разів.</li>
-        <li>Обережно відведіть плечі назад, не затримуючи дихання.</li>
-        <li>Розкрийте долоні й повільно стисніть пальці 5–8 разів.</li>
-      </ol>
-      <p>Усі рухи виконуйте без болю. Це лише демонстраційний контент; реальний комплекс має перевірити фізичний терапевт.</p>
-    </div>
-  </div>
-
-  <div class="modal" id="modal-exercise-support" role="dialog" aria-modal="true" aria-labelledby="modal-exercise-support-title" hidden>
-    <div class="modal__backdrop" data-modal-close></div>
-    <div class="modal__dialog" role="document">
-      <button class="modal__close" type="button" aria-label="Закрити" data-modal-close>×</button>
-      <p class="eyebrow">Демонстраційний комплекс</p>
-      <h2 id="modal-exercise-support-title">Перенесення ваги біля опори</h2>
-      <p>Виконуйте лише біля нерухомої опори та, за потреби, у присутності іншої людини.</p>
-      <ol>
-        <li>Станьте обличчям до стійкої опори й тримайтеся обома руками.</li>
-        <li>Повільно перенесіть вагу трохи вправо, потім поверніться в центр.</li>
-        <li>Повторіть уліво, не відриваючи стопи від підлоги.</li>
-      </ol>
-      <p>За нестійкості, запаморочення або страху падіння припиніть вправу.</p>
-    </div>
-  </div>
-
-  <div class="modal" id="modal-exercise-breathing" role="dialog" aria-modal="true" aria-labelledby="modal-exercise-breathing-title" hidden>
-    <div class="modal__backdrop" data-modal-close></div>
-    <div class="modal__dialog" role="document">
-      <button class="modal__close" type="button" aria-label="Закрити" data-modal-close>×</button>
-      <p class="eyebrow">Демонстраційний комплекс</p>
-      <h2 id="modal-exercise-breathing-title">Спокійне дихання і голос</h2>
-      <ol>
-        <li>Сядьте з опорою для спини.</li>
-        <li>Зробіть спокійний вдих носом і довший видих ротом.</li>
-        <li>Після вдиху м’яко протягніть звук «а» без напруження.</li>
-        <li>Повторіть 3–5 разів із паузами.</li>
-      </ol>
-      <p>Вправи для голосу мають підбиратися індивідуально фахівцем із мовлення.</p>
-    </div>
-  </div>
-
-  <script src="script.js"></script>
-</body>
-</html>
+</div>
+<nav aria-label="Навігація в підвалі" class="footer-nav">
+<a href="understand.html">Про хворобу</a>
+<a href="daily-life.html">Повсякденне життя</a>
+<a href="movement.html">Вправи</a>
+<a href="relatives.html">Для близьких</a>
+</nav>
+<div class="footer-meta">
+<a href="index.html">Політика конфіденційності</a>
+<a href="index.html">Редакційні стандарти</a>
+<a href="index.html">Зворотний зв’язок</a>
+<p>© <span id="currentYear"></span> «Рух поруч»</p>
+</div>
+</div>
+</footer><script src="script.js"></script></body></html>
