@@ -2654,3 +2654,261 @@ body.high-contrast.inner-page .flat-source-band {
     width: min(calc(100% - 28px), var(--container));
   }
 }
+
+
+/* ==========================================================================
+   Оновлення шапки, назв, змісту сторінок і кольорів
+   ========================================================================== */
+
+:root {
+  --page-beige: #f4ecde;
+  --page-beige-card: #eadfce;
+}
+
+/* 1. Підпис починається під усім логотипом, а не лише під словом «Паркінс». */
+.site-header .brand {
+  display: grid;
+  grid-template-columns: 46px auto;
+  grid-template-rows: auto auto;
+  column-gap: 12px;
+  align-items: center;
+}
+
+.site-header .brand__mark {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.site-header .brand > strong {
+  grid-column: 2;
+  grid-row: 1;
+  align-self: center;
+}
+
+.site-header .brand > small {
+  grid-column: 1 / -1;
+  grid-row: 2;
+  margin-top: 4px;
+  color: var(--ink-soft);
+  font-size: 0.72rem;
+  line-height: 1.25;
+  white-space: nowrap;
+}
+
+/* 2. Головна сторінка повністю на бежевому фоні. */
+.home-page,
+.home-page main,
+.home-page .hero,
+.home-page main > section {
+  background: var(--page-beige);
+}
+
+.home-page .site-header,
+.home-page .topics-nav {
+  background: var(--page-beige);
+}
+
+/* На головній картки також бежеві, але трохи темніші за загальний фон. */
+.home-page .hero-card,
+.home-page .search-panel,
+.home-page .page-card {
+  border-color: rgba(25, 50, 56, 0.17);
+  background: var(--page-beige-card);
+}
+
+/* 3. Білі картки на білих рубриках стають бежевими. */
+.page-rubric--white :is(
+  .info-card,
+  .step-card,
+  .support-card,
+  .resource-card,
+  .exercise-card,
+  .specialist-grid article,
+  .emotion-grid article,
+  .symptom-grid article,
+  .tip-stack article,
+  .role-grid article,
+  .checklist-card
+) {
+  background: var(--page-beige);
+}
+
+/* Інформаційна картка у білому вступному блоці теж відділена бежевим. */
+.inner-page .page-hero__aside,
+.inner-page .library-group .page-hero__aside {
+  color: var(--ink);
+  background: var(--page-beige);
+}
+
+/* 5. Клікабельний зміст після заголовка. */
+.page-hero__subtitle,
+.library-group__subtitle {
+  max-width: 790px;
+  margin: 12px 0 0;
+  color: var(--brand-deep);
+  font-family: var(--font-serif);
+  font-size: clamp(1.2rem, 2.4vw, 1.7rem);
+  font-weight: 650;
+  line-height: 1.25;
+}
+
+.page-toc {
+  max-width: 840px;
+  margin-top: 26px;
+  padding-top: 22px;
+  border-top: 1px solid var(--border);
+}
+
+.page-toc__title {
+  margin: 0 0 12px;
+  color: var(--brand-deep);
+  font-size: 0.86rem;
+  font-weight: 800;
+  letter-spacing: 0.075em;
+  text-transform: uppercase;
+}
+
+.page-toc__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.page-toc__list a {
+  min-height: 40px;
+  display: inline-flex;
+  align-items: center;
+  padding: 7px 12px;
+  border: 1px solid rgba(47, 102, 98, 0.34);
+  border-radius: 999px;
+  color: var(--brand-deep);
+  background: var(--page-beige);
+  text-decoration: none;
+  font-size: 0.84rem;
+  font-weight: 750;
+  line-height: 1.25;
+}
+
+.page-toc__list a:hover {
+  color: var(--white);
+  background: var(--brand);
+  border-color: var(--brand);
+}
+
+/* Достатній відступ під час переходу за якірним посиланням. */
+[id] {
+  scroll-margin-top: 140px;
+}
+
+/* 6. На сторінці «Рух» текст карток чорний/темний на бежевому. */
+.movement-page .exercise-card {
+  color: var(--ink);
+  border-color: rgba(25, 50, 56, 0.16);
+  background: var(--page-beige-card);
+}
+
+.movement-page .exercise-card p {
+  color: var(--ink-soft);
+}
+
+.movement-page .exercise-card .button--light {
+  color: var(--white);
+  background: var(--brand-deep);
+  border-color: var(--brand-deep);
+}
+
+.movement-page .exercise-card .button--light:hover {
+  background: var(--brand);
+  border-color: var(--brand);
+}
+
+.movement-page .filter-button {
+  border-color: var(--brand-deep);
+  color: var(--brand-deep);
+}
+
+.movement-page .filter-button:hover,
+.movement-page .filter-button.is-active {
+  color: var(--white);
+  background: var(--brand-deep);
+}
+
+/* 7. На сторінці для близьких прибрано оранжеві вертикальні смужки. */
+.relatives-page .support-card {
+  padding: 28px;
+  border: 1px solid var(--border);
+  border-left: 1px solid var(--border);
+  border-radius: var(--radius-md);
+}
+
+/* 8. Заголовки карток на всьому сайті — темно-зелені. */
+:is(
+  .hero-card,
+  .page-card,
+  .step-card,
+  .info-card,
+  .support-card,
+  .resource-card,
+  .exercise-card,
+  .specialist-grid article,
+  .emotion-grid article,
+  .symptom-grid article,
+  .tip-stack article,
+  .role-grid article,
+  .accordion,
+  .checklist-card
+) :is(h2, h3),
+.glossary-entry dt {
+  color: var(--brand-deep);
+}
+
+/* Назви на сторінках, крихтах і в меню залишаються в єдиній системі. */
+.inner-page main h1 {
+  color: var(--ink);
+}
+
+/* Бежева зона з хлібними крихтами на всіх сторінках. */
+.inner-page .page-hero,
+.inner-page .library-rubric {
+  background: var(--page-beige);
+}
+
+.inner-page .breadcrumbs {
+  color: var(--ink);
+}
+
+@media (max-width: 1080px) {
+  .site-header .brand > small {
+    white-space: normal;
+  }
+}
+
+@media (max-width: 760px) {
+  .site-header .brand {
+    grid-template-columns: 40px minmax(0, 1fr);
+    column-gap: 10px;
+  }
+
+  .site-header .brand__mark {
+    width: 40px;
+    height: 40px;
+  }
+
+  .site-header .brand > small {
+    max-width: 230px;
+    font-size: 0.67rem;
+  }
+
+  .page-toc__list {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .page-toc__list a {
+    width: 100%;
+    border-radius: 12px;
+  }
+}
