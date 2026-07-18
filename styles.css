@@ -2478,3 +2478,179 @@ body.high-contrast.understand-page .flat-source-band {
     border-radius: 0;
   }
 }
+
+
+/* ==========================================================================
+   Єдине оформлення всіх внутрішніх сторінок
+   ========================================================================== */
+
+:root {
+  --page-beige: #f4ecde;
+  --page-white: #ffffff;
+}
+
+/* Бежева шапка на всіх внутрішніх сторінках. */
+.inner-page .site-header,
+.inner-page .topics-nav {
+  background: var(--page-beige);
+}
+
+.inner-page .site-header,
+.inner-page .topics-nav {
+  border-bottom-color: rgba(25, 50, 56, 0.16);
+}
+
+/* Бежева зона хлібних крихт і білий вступний блок. */
+.inner-page .page-hero {
+  padding: clamp(42px, 6vw, 72px) 0 0;
+  background: var(--page-beige);
+}
+
+.inner-page .page-hero .breadcrumbs {
+  margin-bottom: 28px;
+}
+
+.inner-page .page-hero__grid {
+  padding: clamp(28px, 4vw, 46px);
+  border: 1px solid var(--border);
+  border-bottom: 0;
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+  background: var(--page-white);
+}
+
+/* Сторінка «Про хворобу»: крихти також лежать на бежевому фоні. */
+.inner-page .library-rubric {
+  padding-top: clamp(42px, 6vw, 72px);
+  background: var(--page-beige);
+}
+
+.inner-page .library-rubric .breadcrumbs {
+  margin-bottom: 28px;
+}
+
+.inner-page .library-group {
+  background: var(--page-white);
+}
+
+/* Безперервна послідовність рубрик на інших сторінках. */
+.inner-page main > .page-rubric {
+  padding: 0;
+  background: var(--surface);
+}
+
+.inner-page main > .page-rubric > .container {
+  padding: clamp(34px, 5vw, 58px);
+  border-right: 1px solid var(--border);
+  border-left: 1px solid var(--border);
+}
+
+.inner-page main > .page-rubric--beige > .container {
+  background: var(--page-beige);
+}
+
+.inner-page main > .page-rubric--white > .container {
+  background: var(--page-white);
+}
+
+.inner-page main > .page-rubric + .page-rubric > .container {
+  border-top: 0;
+}
+
+.inner-page main > .page-rubric--last > .container {
+  border-bottom: 1px solid var(--border);
+  border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+}
+
+/* Аварійні попередження зберігають окреме значення, але не розривають ритм. */
+.inner-page main > .page-rubric--emergency > .container {
+  background: var(--danger-soft);
+  border-color: rgba(157, 48, 48, 0.28);
+}
+
+.inner-page main > .page-rubric--emergency + .page-rubric > .container {
+  border-top: 0;
+}
+
+/* Старі фонові класи не повинні перекривати нову систему. */
+.inner-page main > .page-rubric.section--tinted,
+.inner-page main > .page-rubric.section--deep {
+  color: var(--ink);
+  background: var(--surface);
+}
+
+.inner-page main > .page-rubric .section-heading--light,
+.inner-page main > .page-rubric .section-heading--light > p,
+.inner-page main > .page-rubric .section-heading--light .eyebrow {
+  color: inherit;
+}
+
+/* Темні внутрішні картки зберігають читабельність на світлих рубриках. */
+.inner-page main > .page-rubric .role-grid article,
+.inner-page main > .page-rubric .exercise-card {
+  color: var(--ink);
+}
+
+.inner-page main > .page-rubric .role-grid article {
+  border-color: var(--border);
+  background: rgba(255, 255, 255, 0.72);
+}
+
+.inner-page main > .page-rubric .role-grid p {
+  color: var(--ink-soft);
+}
+
+/* Сторінка «Про хворобу»: перевірка інформації — бежева рубрика. */
+.inner-page .understand-sources {
+  background: var(--surface);
+}
+
+.inner-page .flat-source-band {
+  background: var(--page-beige);
+}
+
+/* Високий контраст. */
+body.high-contrast.inner-page .site-header,
+body.high-contrast.inner-page .topics-nav,
+body.high-contrast.inner-page .page-hero,
+body.high-contrast.inner-page .library-rubric,
+body.high-contrast.inner-page main > .page-rubric > .container,
+body.high-contrast.inner-page .flat-source-band {
+  background: var(--surface);
+}
+
+/* Мобільна версія: повна ширина рубрик без бічних рамок. */
+@media (max-width: 1080px) {
+  .inner-page .topics-nav {
+    display: none;
+  }
+}
+
+@media (max-width: 760px) {
+  .inner-page .page-hero,
+  .inner-page .library-rubric {
+    padding-top: 28px;
+  }
+
+  .inner-page .page-hero__grid {
+    margin-inline: -14px;
+    padding: 26px 20px;
+    border-right: 0;
+    border-left: 0;
+    border-radius: 0;
+  }
+
+  .inner-page main > .page-rubric > .container {
+    width: 100%;
+    padding: 32px 20px;
+    border-right: 0;
+    border-left: 0;
+  }
+
+  .inner-page main > .page-rubric--last > .container {
+    border-radius: 0;
+  }
+
+  .inner-page .library-rubric > .container {
+    width: min(calc(100% - 28px), var(--container));
+  }
+}
