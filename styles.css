@@ -1505,3 +1505,241 @@ body.high-contrast .resource-card {
     min-height: auto;
   }
 }
+
+
+/* ==========================================================================
+   Розширені теми першої версії
+   ========================================================================== */
+.topics-nav {
+  position: relative;
+  z-index: 900;
+  border-bottom: 1px solid var(--border);
+  background: var(--white);
+}
+
+.topics-nav__inner {
+  display: flex;
+  gap: 6px;
+  overflow-x: auto;
+  padding-block: 10px;
+  scrollbar-width: thin;
+}
+
+.topics-nav a {
+  flex: 0 0 auto;
+  min-height: 40px;
+  display: inline-flex;
+  align-items: center;
+  padding: 7px 12px;
+  border-radius: 999px;
+  color: var(--ink-soft);
+  text-decoration: none;
+  font-size: 0.82rem;
+  font-weight: 750;
+}
+
+.topics-nav a:hover,
+.topics-nav a[aria-current="page"] {
+  color: var(--brand-deep);
+  background: var(--brand-light);
+}
+
+.info-grid,
+.specialist-grid,
+.symptom-grid,
+.emotion-grid,
+.glossary-grid {
+  display: grid;
+  gap: 20px;
+}
+
+.info-grid,
+.specialist-grid,
+.symptom-grid,
+.emotion-grid,
+.glossary-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.info-card,
+.specialist-grid article,
+.symptom-grid article,
+.emotion-grid article,
+.glossary-grid article {
+  padding: 28px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: var(--white);
+  box-shadow: var(--shadow-soft);
+}
+
+.info-card h3,
+.specialist-grid h3,
+.symptom-grid h3,
+.emotion-grid h3,
+.glossary-grid h3 {
+  margin-top: 14px;
+}
+
+.info-card p,
+.specialist-grid p,
+.symptom-grid p,
+.emotion-grid p,
+.glossary-grid p {
+  color: var(--ink-soft);
+}
+
+.symptom-grid article > span:first-child {
+  color: var(--accent);
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.warning-box--large {
+  margin-top: 28px;
+  padding: 22px;
+}
+
+.tip-stack {
+  display: grid;
+  gap: 14px;
+}
+
+.tip-stack article {
+  padding: 22px;
+  border-radius: 16px;
+  background: var(--white);
+  box-shadow: var(--shadow-soft);
+}
+
+.tip-stack p {
+  margin-bottom: 0;
+  color: var(--ink-soft);
+}
+
+.support-actions {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.support-actions button {
+  min-height: 68px;
+  padding: 14px 18px;
+  border: 2px solid var(--border);
+  border-radius: 14px;
+  color: var(--ink);
+  background: var(--white);
+  cursor: pointer;
+  text-align: left;
+  font-weight: 750;
+}
+
+.support-actions button:hover,
+.support-actions button.is-selected {
+  border-color: var(--brand);
+  background: var(--brand-light);
+}
+
+.crisis-panel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 36px;
+}
+
+.crisis-panel > div {
+  max-width: 850px;
+}
+
+.source-panel {
+  display: grid;
+  grid-template-columns: minmax(0, .8fr) minmax(0, 1fr);
+  gap: 42px;
+  align-items: start;
+  padding: clamp(28px, 4vw, 44px);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: var(--surface-soft);
+}
+
+.source-panel h2 {
+  font-size: clamp(1.55rem, 3vw, 2.35rem);
+}
+
+.source-panel p {
+  color: var(--ink-soft);
+}
+
+.source-list {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+  padding-left: 22px;
+}
+
+.source-list a {
+  color: var(--brand-dark);
+  font-weight: 750;
+  text-underline-offset: 4px;
+}
+
+.related-links {
+  padding: 28px;
+  border-radius: var(--radius-md);
+  background: var(--surface-soft);
+}
+
+.related-links > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.related-links a {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  padding: 9px 14px;
+  border-radius: 999px;
+  color: var(--brand-dark);
+  background: var(--white);
+  text-decoration: none;
+  font-weight: 750;
+}
+
+.related-links a:hover {
+  background: var(--brand-light);
+}
+
+@media (max-width: 1080px) {
+  .info-grid,
+  .specialist-grid,
+  .symptom-grid,
+  .emotion-grid,
+  .glossary-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  .info-grid,
+  .specialist-grid,
+  .symptom-grid,
+  .emotion-grid,
+  .glossary-grid,
+  .support-actions,
+  .source-panel {
+    grid-template-columns: 1fr;
+  }
+
+  .crisis-panel {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .crisis-panel .button {
+    width: 100%;
+  }
+}
